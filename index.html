@@ -477,10 +477,20 @@
     <!--==================== Why Solguard Section ====================-->
     <section class="why-solguard__section">
       <div class="why-solguard__image-wrapper">
-        <img
-          src="/assets/images/why-section/why.jpg"
-          alt="Solguard product in a Nordic setting"
-        />
+        <picture>
+          <source
+            type="image/avif"
+            srcset="/assets/images/why-section/why.avif"
+          />
+          <source
+            type="image/webp"
+            srcset="/assets/images/why-section/why.webp"
+          />
+          <img
+            src="/assets/images/why-section/why.jpg"
+            alt="Solguard product in a Nordic setting"
+          />
+        </picture>
       </div>
       <div class="why-solguard__container">
         <div class="why-solguard__content">
