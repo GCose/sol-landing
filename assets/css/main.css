@@ -208,7 +208,7 @@ body {
 
 .hero__subtitle {
   font-weight: 200;
-  line-height: 1.2;
+  line-height: 1.1;
   letter-spacing: -0.02em;
   color: var(--color-black);
 }
