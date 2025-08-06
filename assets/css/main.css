@@ -747,7 +747,6 @@ body {
 
 .highlights__product-tagline {
   line-height: 1.6;
-  font-style: italic;
   color: var(--color-black-soft);
   font-size: var(--font-size-lg);
   font-weight: var(--font-weight-normal);
@@ -868,7 +867,7 @@ body {
   }
 
   .highlights__product-content {
-    padding: var(--space-xl);
+    padding: var(--space-xl) 0;
   }
 
   .highlights__product-image {
