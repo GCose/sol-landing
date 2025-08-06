@@ -99,7 +99,7 @@ body {
   position: fixed;
   mix-blend-mode: difference;
   transition: all 0.3s var(--transition-smooth);
-  padding: clamp(1rem, 3vw, 1.5rem) clamp(3vw, 5vw, 5vw);
+  padding: clamp(1rem, 3vw, 1.5rem) clamp(1.8vw, 5vw, 3vw);
 }
 
 .nav__wrapper {
@@ -165,7 +165,7 @@ body {
   display: flex;
   align-items: center;
   background: var(--color-white);
-  padding: 0 clamp(3vw, 5vw, 5vw);
+  padding: 0 clamp(1.8vw, 5vw, 3vw);
 }
 
 .hero__title--main {
@@ -203,7 +203,7 @@ body {
   width: 100%;
   text-align: center;
   margin-bottom: var(--space-3xl);
-  padding: 0 clamp(3vw, 5vw, 5vw);
+  padding: 0 clamp(1.8vw, 5vw, 3vw);
 }
 
 .hero__subtitle {
@@ -216,7 +216,7 @@ body {
 .hero__subtitle--line1 {
   display: block;
   font-weight: 800;
-  font-size: clamp(1.8rem, 5vw, 4rem);
+  font-size: clamp(1.8rem, 2vw, 4rem);
   margin-bottom: clamp(0.8rem, 2vw, 1.2rem);
 }
 
@@ -261,7 +261,7 @@ body {
   gap: var(--space-lg);
   flex-direction: column;
   justify-content: center;
-  padding: 0 clamp(3vw, 5vw, 5vw) 0 2rem;
+  padding: 0 clamp(1.8vw, 5vw, 3vw) 0 2rem;
 }
 
 .hero__description-wrapper {
@@ -393,7 +393,7 @@ body {
   }
 
   .hero__story-content {
-    padding: 0 clamp(3vw, 5vw, 5vw);
+    padding: 0 clamp(1.8vw, 5vw, 3vw);
   }
 }
 
@@ -403,7 +403,7 @@ body {
 .intro__section {
   width: 100%;
   background: var(--color-white);
-  padding: var(--space-3xl) clamp(3vw, 5vw, 5vw);
+  padding: var(--space-3xl) clamp(1.8vw, 5vw, 3vw);
 }
 
 .intro__container {
@@ -491,8 +491,8 @@ body {
 /*========== Full Width Image ==========*/
 .intro__image {
   width: 100vw;
-  margin-left: calc(-1 * clamp(3vw, 5vw, 5vw));
-  margin-right: calc(-1 * clamp(3vw, 5vw, 5vw));
+  margin-left: calc(-1 * clamp(1.8vw, 5vw, 3vw));
+  margin-right: calc(-1 * clamp(1.8vw, 5vw, 3vw));
 }
 
 .intro__image img {
@@ -533,7 +533,7 @@ body {
   max-width: 1600px;
   text-align: center;
   margin-bottom: var(--space-3xl);
-  padding: 0 clamp(3vw, 5vw, 5vw);
+  padding: 0 clamp(1.8vw, 5vw, 3vw);
 }
 
 .promise__headline {
@@ -553,7 +553,7 @@ body {
 }
 
 .promise__details {
-  padding: 0 var(--space-xl) 0 clamp(3vw, 5vw, 5vw);
+  padding: 0 var(--space-xl) 0 clamp(1.8vw, 5vw, 3vw);
 }
 
 .promise__intro {
@@ -624,7 +624,7 @@ body {
   margin: 0 auto;
   max-width: 800px;
   text-align: center;
-  padding: 0 clamp(3vw, 5vw, 5vw);
+  padding: 0 clamp(1.8vw, 5vw, 3vw);
 }
 
 .promise__quote-text {
@@ -646,14 +646,14 @@ body {
   }
 
   .promise__details {
-    padding: 0 clamp(3vw, 5vw, 5vw);
+    padding: 0 clamp(1.8vw, 5vw, 3vw);
   }
 
   .promise__visual {
     width: 100vw;
     height: 50vh;
-    margin-left: calc(-1 * clamp(3vw, 5vw, 5vw));
-    margin-right: calc(-1 * clamp(3vw, 5vw, 5vw));
+    margin-left: calc(-1 * clamp(1.8vw, 5vw, 3vw));
+    margin-right: calc(-1 * clamp(1.8vw, 5vw, 3vw));
   }
 }
 
@@ -664,7 +664,7 @@ body {
   width: 100%;
   position: relative;
   background: var(--color-gray-light);
-  padding: var(--space-3xl) clamp(3vw, 5vw, 5vw);
+  padding: var(--space-3xl) clamp(1.8vw, 5vw, 3vw);
 }
 
 .highlights__header {
@@ -890,7 +890,7 @@ body {
   align-items: center;
   flex-direction: column;
   background: var(--color-white);
-  padding: var(--space-3xl) clamp(3vw, 5vw, 5vw);
+  padding: var(--space-3xl) clamp(1.8vw, 5vw, 3vw);
 }
 
 .why-solguard__image-wrapper {
