@@ -1275,6 +1275,7 @@ body {
   display: flex;
   gap: var(--space-xs);
   align-items: baseline;
+  justify-content: flex-end;
 }
 
 .testimonials__name {
