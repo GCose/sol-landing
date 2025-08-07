@@ -215,6 +215,8 @@ body {
 
 .hero__subtitle--line1 {
   display: block;
+  text-align: left;
+  max-width: 1300px;
   font-weight: 800;
   font-size: clamp(1.8rem, 4vw, 4rem);
   margin-bottom: clamp(0.8rem, 2vw, 1.2rem);
