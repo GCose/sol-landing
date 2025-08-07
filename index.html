@@ -16,7 +16,7 @@
           <a href="#hero">SOLGUARD</a>
         </div>
         <div class="nav__menu">
-          <button class="nav__menu-toggle">
+          <button class="nav__menu-toggle" id="nav-toggle">
             <span></span>
             <span></span>
           </button>
@@ -24,6 +24,51 @@
       </div>
     </nav>
     <!--==================== End of Navigation ====================-->
+
+    <!--==================== Fullscreen Menu ====================-->
+    <div class="fullscreen-menu" id="fullscreen-menu">
+      <div class="fullscreen-menu__content">
+        <div class="fullscreen-menu__header">
+          <div class="fullscreen-menu__logo">
+            <a href="#hero">SOLGUARD</a>
+          </div>
+          <button class="fullscreen-menu__close" id="menu-close">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <div class="fullscreen-menu__main">
+          <nav class="fullscreen-menu__nav">
+            <a href="#hero" class="fullscreen-menu__link">Home</a>
+            <a href="#intro" class="fullscreen-menu__link">About</a>
+            <a href="#highlights" class="fullscreen-menu__link">Products</a>
+            <a href="#process" class="fullscreen-menu__link">Process</a>
+            <a href="#testimonials" class="fullscreen-menu__link">Reviews</a>
+            <a href="#trust" class="fullscreen-menu__link">Guarantees</a>
+          </nav>
+
+          <div class="fullscreen-menu__cta">
+            <button class="fullscreen-menu__cta-button">
+              <span>Start Your Project</span>
+              <span>→</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="fullscreen-menu__footer">
+          <div class="fullscreen-menu__contact">
+            <p>hello@solguard.se</p>
+            <p>+46 8 123 456 78</p>
+          </div>
+          <div class="fullscreen-menu__social">
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="LinkedIn">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--==================== End of Fullscreen Menu ====================-->
 
     <!--==================== Hero Section ====================-->
     <section class="hero__section" id="hero">
@@ -126,7 +171,7 @@
     <!--==================== End of Hero Section ====================-->
 
     <!--==================== Intro Section ====================-->
-    <section class="intro__section">
+    <section class="intro__section" id="intro">
       <div class="intro__container">
         <div class="intro__content">
           <h2 class="intro__headline">
@@ -188,7 +233,7 @@
     <!--==================== End of Intro Section ====================-->
 
     <!--==================== Promise Section ====================-->
-    <section class="promise__section">
+    <section class="promise__section" id="promise">
       <div class="promise__header">
         <h2 class="promise__headline">
           Scandinavian Shade Systems — Delivered, Installed, and Paid by Invoice
@@ -267,7 +312,7 @@
     <!--==================== End of Promise Section ====================-->
 
     <!--==================== Highlights Section ====================-->
-    <section class="highlights__section">
+    <section class="highlights__section" id="highlights">
       <div class="highlights__header">
         <h2 class="highlights__headline">Choose Your Shade Solution</h2>
         <p class="highlights__subheadline">
@@ -472,7 +517,7 @@
     <!--==================== End of Highlights Section ====================-->
 
     <!--==================== Why Solguard Section ====================-->
-    <section class="why__section">
+    <section class="why__section" id="why">
       <div class="why__image-wrapper">
         <picture>
           <source
@@ -527,7 +572,7 @@
     <!--==================== End of Why Solguard Section ====================-->
 
     <!--==================== Process Section ====================-->
-    <section class="process__section">
+    <section class="process__section" id="process">
       <div class="process__header">
         <h2 class="process__headline">
           Here's How You Get from "Too Sunny" to "Perfectly Covered"
@@ -778,7 +823,7 @@
     <!--==================== End of Process Section ====================-->
 
     <!--==================== Testimonials Section ====================-->
-    <section class="testimonials__section">
+    <section class="testimonials__section" id="testimonials">
       <div class="testimonials__header">
         <h2 class="testimonials__headline">What Our Customers Say</h2>
       </div>
@@ -884,6 +929,63 @@
       </div>
     </section>
     <!--==================== End of Testimonials Section ====================-->
+
+    <!--==================== Footer ====================-->
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__main">
+          <div class="footer__brand">
+            <div class="footer__logo">
+              <h2>SOLGUARD</h2>
+            </div>
+            <p class="footer__tagline">
+              Transform your outdoors with premium Scandinavian shade systems
+            </p>
+          </div>
+
+          <div class="footer__cta">
+            <h3 class="footer__cta-title">Ready to get started?</h3>
+            <button class="footer__cta-button">
+              <span>Book Your Free Design</span>
+              <span>→</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="footer__divider"></div>
+
+        <div class="footer__bottom">
+          <div class="footer__contact">
+            <div class="footer__contact-item">
+              <span class="footer__contact-label">Email</span>
+              <a href="mailto:hello@solguard.se" class="footer__contact-link"
+                >hello@solguard.se</a
+              >
+            </div>
+            <div class="footer__contact-item">
+              <span class="footer__contact-label">Phone</span>
+              <a href="tel:+46812345678" class="footer__contact-link"
+                >+46 8 123 456 78</a
+              >
+            </div>
+          </div>
+
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Instagram"
+              >Instagram</a
+            >
+            <a href="#" class="footer__social-link" aria-label="LinkedIn"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+
+        <div class="footer__copyright">
+          <p>&copy; 2025 Solguard. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!--==================== End of Footer ====================-->
 
     <!--==================== Main Script Link ====================-->
     <script src="assets/js/main.js"></script>
