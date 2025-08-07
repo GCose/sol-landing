@@ -394,6 +394,10 @@ body {
     grid-template-columns: 1fr;
   }
 
+  .hero__story-header {
+    margin-bottom: 1rem;
+  }
+
   .hero__story-content {
     padding: 0 clamp(3vw, 5vw, 5vw);
   }
