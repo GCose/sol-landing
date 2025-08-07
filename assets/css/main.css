@@ -1941,7 +1941,7 @@ body {
   width: 100%;
   position: relative;
   background: var(--color-black);
-  padding: var(--space-3xl) clamp(3vw, 5vw, 5vw) var(--space-xl);
+  padding: var(--space-3xl) clamp(3vw, 5vw, 5vw) var(--space-sm);
 }
 
 .footer__container {
