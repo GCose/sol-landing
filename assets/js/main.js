@@ -1,6 +1,6 @@
-/**=============== 
+/**=================== 
  * Navigation Scroll 
- ================*/
+ ====================*/
 window.addEventListener(
   "scroll",
   () => {
@@ -16,9 +16,9 @@ window.addEventListener(
   { passive: true }
 );
 
-/**=============== 
+/**=================== 
  * Smooth Scroll CTA 
- ================*/
+ ====================*/
 document.getElementById("hero-cta")?.addEventListener("click", () => {
   const nextSection =
     document.querySelector(".hero__section").nextElementSibling;

@@ -88,9 +88,9 @@ body {
   background-color: var(--color-primary);
 }
 
-/**=================
- * NAVIGATION
- ==================*/
+/**===================
+ * NAVIGATION STYLES
+ ====================*/
 .nav__container {
   top: 0;
   left: 0;
@@ -135,9 +135,9 @@ body {
   transition: all 0.3s var(--transition-smooth);
 }
 
-/**====================
- * HERO SECTION
- =====================*/
+/**=============
+ * HERO STYLES
+ ==============*/
 .hero__section {
   width: 100%;
   position: relative;
@@ -397,9 +397,9 @@ body {
   }
 }
 
-/**====================
- * INTRO SECTION
- =====================*/
+/**==============
+ * INTRO STYLES
+ ===============*/
 .intro__section {
   width: 100%;
   background: var(--color-white);
@@ -519,7 +519,7 @@ body {
 }
 
 /**====================
- * PROMISE SECTION
+ * PROMISE STYLES
  =====================*/
 .promise__section {
   width: 100%;
@@ -637,7 +637,7 @@ body {
 }
 
 /**===================
- * PROMISE BREAKPOINTS
+ * BREAKPOINT STYLES
  ====================*/
 @media (max-width: 768px) {
   .promise__content {
@@ -658,7 +658,7 @@ body {
 }
 
 /**====================
- * HIGHLIGHTS SECTION
+ * HIGHLIGHTS STYLES
  =====================*/
 .highlights__section {
   width: 100%;
@@ -880,9 +880,9 @@ body {
   }
 }
 
-/**====================
-* WHY SOLGUARD SECTION
-=====================*/
+/**===========
+* WHY STYLES
+============*/
 .why__section {
   width: 100%;
   display: flex;
@@ -990,9 +990,9 @@ body {
   }
 }
 
-/**====================
- * PROCESS SECTION
- =====================*/
+/**================
+ * PROCESS STYLES
+ =================*/
 .process__section {
   width: 100%;
   position: relative;
@@ -1185,5 +1185,136 @@ body {
     width: clamp(50px, 10vw, 60px);
     height: clamp(50px, 10vw, 60px);
     font-size: clamp(1.2rem, 4vw, 2rem);
+  }
+}
+
+/**====================
+ * TESTIMONIALS STYLES
+ =====================*/
+.testimonials__section {
+  width: 100%;
+  position: relative;
+  background: var(--color-gray-light);
+  padding: var(--space-3xl) clamp(3vw, 5vw, 5vw);
+}
+
+.testimonials__header {
+  margin: 0 auto;
+  max-width: 900px;
+  text-align: center;
+  margin-bottom: var(--space-3xl);
+}
+
+.testimonials__headline {
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--color-black);
+  font-size: clamp(2rem, 5vw, 4.5rem);
+}
+
+/*========== Testimonials Grid ==========*/
+.testimonials__grid {
+  display: grid;
+  margin: 0 auto;
+  max-width: 1400px;
+  gap: var(--space-xl);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/*========== Testimonial Card ==========*/
+.testimonials__card {
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  padding: var(--space-sm);
+  background: var(--color-white);
+  transition: transform 0.3s var(--transition-smooth);
+}
+
+.testimonials__card:hover {
+  transform: translateY(-5px);
+}
+
+/*========== Testimonial Image ==========*/
+.testimonials__image {
+  width: 100%;
+  position: relative;
+  height: clamp(25vh, 35vh, 35vh);
+}
+
+.testimonials__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 100%;
+  object-position: center;
+  transition: transform 0.6s var(--transition-smooth);
+}
+
+.testimonials__card:hover .testimonials__image img {
+  transform: scale(1.05);
+}
+
+/*========== Testimonial Content ==========*/
+.testimonials__content {
+  flex: 1;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.testimonials__quote {
+  line-height: 1.5;
+  font-style: italic;
+  color: var(--color-black);
+  margin-bottom: var(--space-md);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-normal);
+}
+
+/*========== Testimonial Author ==========*/
+.testimonials__author {
+  display: flex;
+  gap: var(--space-xs);
+  align-items: baseline;
+}
+
+.testimonials__name {
+  color: var(--color-black);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+}
+
+.testimonials__name::after {
+  content: ",";
+  margin-right: 0.2rem;
+}
+
+.testimonials__location {
+  font-size: var(--font-size-sm);
+  color: var(--color-black-lighter);
+  font-weight: var(--font-weight-normal);
+}
+
+/**====================
+ * BREAKPOINT STYLES
+ =====================*/
+@media (max-width: 1024px) {
+  .testimonials__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials__grid {
+    gap: var(--space-lg);
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials__card {
+    margin: 0 auto;
+    max-width: 500px;
   }
 }
