@@ -1086,9 +1086,9 @@ body {
 }
 
 .process__step-title {
+  font-weight: 600;
   line-height: 1.3;
   color: var(--color-black);
-  font-weight: var(--font-weight-medium);
   font-size: clamp(var(--font-size-xl), 3vw, 3rem);
 }
 
