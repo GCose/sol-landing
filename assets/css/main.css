@@ -48,8 +48,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   text-decoration: none;
+  box-sizing: border-box;
   scroll-behavior: smooth;
   transition: all 0.3s ease-in-out;
 }
@@ -1705,6 +1705,232 @@ body {
   .testimonials__card {
     margin: 0 auto;
     max-width: 500px;
+  }
+}
+
+/**===============
+ * FAQ STYLES
+ ================*/
+.faq__section {
+  width: 100%;
+  position: relative;
+  background: var(--color-white);
+  padding: var(--space-3xl) clamp(3vw, 5vw, 5vw);
+}
+
+.faq__header {
+  margin: 0 auto;
+  max-width: 900px;
+  text-align: center;
+  margin-bottom: var(--space-3xl);
+}
+
+.faq__headline {
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--color-black);
+  font-size: clamp(2rem, 5vw, 4.5rem);
+}
+
+.faq__grid {
+  display: flex;
+  margin: 0 auto;
+  max-width: 900px;
+  gap: var(--space-md);
+  flex-direction: column;
+}
+
+.faq__item {
+  overflow: hidden;
+  background: var(--color-gray-light);
+  border-radius: clamp(6px, 1vw, 10px);
+}
+
+.faq__question {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  color: var(--color-black);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-medium);
+  padding: var(--space-lg) var(--space-xl);
+  transition: background 0.3s var(--transition-smooth);
+}
+
+.faq__question::after {
+  top: 50%;
+  content: "+";
+  position: absolute;
+  right: var(--space-xl);
+  color: var(--color-primary);
+  transform: translateY(-50%);
+  font-size: var(--font-size-xl);
+  transition: transform 0.3s var(--transition-smooth);
+}
+
+.faq__item[open] > .faq__question::after {
+  content: "−";
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.faq__item[open] > .faq__question {
+  color: var(--color-black);
+  background: var(--color-primary);
+}
+
+.faq__answer {
+  line-height: 1.6;
+  color: var(--color-black-soft);
+  font-size: var(--font-size-md);
+  padding: 0 var(--space-xl) var(--space-lg);
+}
+
+.faq__answer p {
+  margin-top: var(--space-sm);
+}
+
+/**=============
+ * CTA STYLES
+ =============*/
+.cta__section {
+  width: 100%;
+  position: relative;
+  background: var(--color-white);
+  padding: var(--space-3xl) clamp(3vw, 5vw, 5vw);
+}
+
+.cta__container {
+  display: grid;
+  margin: 0 auto;
+  max-width: 1400px;
+  align-items: center;
+  gap: var(--space-xl);
+  grid-template-columns: 1fr 1fr;
+}
+
+.cta__content {
+  display: flex;
+  gap: var(--space-lg);
+  flex-direction: column;
+  padding-right: var(--space-md);
+}
+
+.cta__headline {
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--color-black);
+  font-size: clamp(2.5rem, 6vw, 3rem);
+}
+
+.cta__text-group {
+  display: flex;
+  gap: var(--space-sm);
+  flex-direction: column;
+}
+
+.cta__text {
+  line-height: 1.4;
+  color: var(--color-black-soft);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-normal);
+}
+
+.cta__tagline {
+  line-height: 1.4;
+  color: var(--color-primary);
+  margin-top: var(--space-md);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+}
+
+.cta__button {
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  width: fit-content;
+  position: relative;
+  align-items: center;
+  display: inline-flex;
+  gap: var(--space-sm);
+  letter-spacing: 0.02em;
+  color: var(--color-black);
+  background: var(--color-primary);
+  font-size: var(--font-size-base);
+  border-radius: clamp(6px, 1vw, 10px);
+  font-weight: var(--font-weight-medium);
+  transition: all 0.4s var(--transition-smooth);
+  padding: clamp(1rem, 2vw, 1.5rem) clamp(2rem, 4vw, 3rem);
+}
+
+.cta__button::before {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  content: "";
+  height: 100%;
+  position: absolute;
+  background: var(--color-black);
+  transition: left 0.4s var(--transition-smooth);
+}
+
+.cta__button:hover::before {
+  left: 0;
+}
+
+.cta__button span {
+  z-index: 1;
+  position: relative;
+  transition: color 0.4s var(--transition-smooth);
+}
+
+.cta__button:hover span {
+  color: var(--color-primary);
+}
+
+.cta__image {
+  width: 100%;
+  overflow: hidden;
+  height: clamp(50vh, 80vh, 80vh);
+  border-radius: clamp(8px, 1.5vw, 16px);
+}
+
+.cta__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/**===================
+ * BREAKPOINT STYLES
+ ===================*/
+@media (max-width: 768px) {
+  .cta__container {
+    gap: var(--space-2xl);
+    grid-template-columns: 1fr;
+  }
+
+  .cta__content {
+    padding-right: 0;
+  }
+
+  .cta__headline {
+    font-size: clamp(2rem, 8vw, 3.5rem);
+  }
+
+  .cta__text {
+    font-size: var(--font-size-lg);
+  }
+
+  .cta__image {
+    height: clamp(30vh, 50vw, 50vh);
+  }
+
+  .cta__button {
+    width: 100%;
+    justify-content: center;
   }
 }
 
