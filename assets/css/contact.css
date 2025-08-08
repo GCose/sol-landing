@@ -78,7 +78,7 @@
 .contact__description {
   line-height: 1.6;
   color: var(--color-black-soft);
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-base);
   font-weight: var(--font-weight-normal);
 }
 
