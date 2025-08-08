@@ -1615,11 +1615,11 @@ body {
 
 /*========== Testimonial Card ==========*/
 .testimonials__card {
+  padding: 0;
   display: flex;
   overflow: hidden;
   flex-direction: column;
-  padding: var(--space-sm);
-  background: var(--color-white) 0;
+  background: var(--color-white);
   transition: transform 0.3s var(--transition-smooth);
 }
 
