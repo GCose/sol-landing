@@ -231,16 +231,18 @@
 .contact__trust {
   width: 100%;
   position: relative;
+  margin: 0 auto 3rem;
   background: var(--color-white);
-  border-top: 1px solid rgba(11, 9, 6, 0.1);
-  padding: var(--space-3xl) clamp(3vw, 5vw, 5vw);
+  border-top: 1px solid var(--color-black);
+  border-bottom: 1px solid var(--color-black);
+  padding: var(--space-xl) clamp(3vw, 5vw, 5vw);
 }
 
 .contact__trust-container {
   display: grid;
   margin: 0 auto;
-  max-width: 1200px;
-  align-items: flex-start;
+  max-width: 1300px;
+  align-items: center;
   gap: clamp(2rem, 5vw, 4rem);
   grid-template-columns: 1fr 1.5fr;
 }
@@ -268,7 +270,7 @@
 .contact__trust-features {
   display: grid;
   gap: var(--space-lg);
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .contact__trust-item {
