@@ -1796,7 +1796,7 @@ body {
 .cta__section {
   width: 100%;
   position: relative;
-  background: var(--color-white);
+  background: var(--color-gray-light);
   padding: var(--space-3xl) clamp(3vw, 5vw, 5vw);
 }
 
