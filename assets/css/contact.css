@@ -1,81 +1,93 @@
-/**=================
- * CONTACT HEADER
- ==================*/
+/**======================
+ * CONTACT HEADER STYLES
+ =======================*/
 .contact__header {
   width: 100%;
   position: relative;
   background: var(--color-white);
-  padding-bottom: var(--space-2xl);
-  padding-top: clamp(6rem, 12vh, 8rem);
-  border-bottom: 1px solid rgba(11, 9, 6, 0.1);
+  border-bottom: 1px solid var(--color-black);
+  padding: clamp(8rem, 15vh, 12rem) clamp(3vw, 5vw, 5vw) var(--space-3xl);
 }
 
-.contact__header-content {
+.contact__header-container {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1000px;
   text-align: center;
-  padding: 0 clamp(3vw, 5vw, 5vw);
 }
 
 .contact__title {
-  font-weight: 800;
   line-height: 1.2;
+  font-weight: 800;
   letter-spacing: -0.02em;
   color: var(--color-black);
-  margin-bottom: var(--space-md);
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  margin-bottom: var(--space-lg);
+  font-size: clamp(2.5rem, 6vw, 4rem);
 }
 
 .contact__subtitle {
   margin: 0 auto;
-  line-height: 1.6;
   max-width: 600px;
+  line-height: 1.6;
   color: var(--color-black-soft);
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-md);
   font-weight: var(--font-weight-normal);
 }
 
-/**================
- * CONTACT MAIN
- =================*/
+/**=====================
+ * CONTACT MAIN STYLES
+ ======================*/
 .contact__main {
   width: 100%;
   position: relative;
-  background: var(--color-gray-light);
+  background: var(--color-white);
   padding: var(--space-3xl) clamp(3vw, 5vw, 5vw);
 }
 
 .contact__container {
   display: grid;
   margin: 0 auto;
-  max-width: 1400px;
-  gap: var(--space-3xl);
+  max-width: 1600px;
   align-items: flex-start;
-  grid-template-columns: 1fr 1fr;
+  gap: clamp(2rem, 5vw, 4rem);
+  grid-template-columns: 1fr 1.2fr;
 }
 
-/**=================
- * CONTACT CONTENT
- ==================*/
+/**=====================
+ * LEFT CONTENT STYLES
+ ======================*/
 .contact__content {
   display: flex;
   gap: var(--space-2xl);
   flex-direction: column;
-  padding-right: var(--space-lg);
+  padding-right: clamp(1rem, 3vw, 2rem);
 }
 
-.contact__content-title {
+.contact__intro {
+  display: flex;
+  gap: var(--space-sm);
+  flex-direction: column;
+}
+
+.contact__heading {
+  line-height: 1.3;
   font-weight: 600;
-  line-height: 1.2;
   color: var(--color-black);
-  margin-bottom: var(--space-lg);
   font-size: clamp(1.8rem, 4vw, 2.5rem);
 }
 
-/*========== Contact Steps ==========*/
-.contact__steps {
+.contact__description {
+  line-height: 1.6;
+  color: var(--color-black-soft);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-normal);
+}
+
+/**=======================
+ * PROCESS STEPS STYLES
+ ========================*/
+.contact__process {
   display: flex;
-  gap: var(--space-lg);
+  gap: var(--space-xl);
   flex-direction: column;
 }
 
@@ -92,52 +104,52 @@
   align-items: center;
   justify-content: center;
   color: var(--color-black);
-  width: clamp(40px, 6vw, 50px);
-  font-size: var(--font-size-lg);
-  height: clamp(40px, 6vw, 50px);
+  width: clamp(30px, 7vw, 50px);
+  height: clamp(30px, 7vw, 50px);
   background: var(--color-primary);
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
   font-weight: var(--font-weight-semibold);
 }
 
-.contact__step-details {
+.contact__step-content {
   flex: 1;
   display: flex;
-  gap: var(--space-xs);
+  gap: var(--space-sm);
   flex-direction: column;
 }
 
 .contact__step-title {
-  font-weight: 600;
   line-height: 1.3;
+  font-weight: 600;
   color: var(--color-black);
   font-size: var(--font-size-lg);
 }
 
-.contact__step-description {
+.contact__step-text {
   line-height: 1.6;
   color: var(--color-black-soft);
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-normal);
 }
 
-/*========== Contact Features ==========*/
-.contact__features {
-  padding: var(--space-xl);
+/**====================
+ * CONTACT PROMISE
+ =====================*/
+.contact__promise {
   background: var(--color-white);
-  border-radius: clamp(8px, 1.5vw, 16px);
 }
 
-.contact__features-title {
+.contact__promise-title {
+  line-height: 1.3;
   font-weight: 600;
-  line-height: 1.2;
   color: var(--color-black);
   margin-bottom: var(--space-lg);
   font-size: var(--font-size-xl);
 }
 
-.contact__feature-list {
+.contact__features {
   display: flex;
-  gap: var(--space-md);
+  gap: var(--space-sm);
   flex-direction: column;
 }
 
@@ -167,28 +179,30 @@
   font-weight: var(--font-weight-normal);
 }
 
-/**================
- * CONTACT FORM
- =================*/
-.contact__form-wrapper {
+/**============================
+ * RIGHT FORM CONTAINER STYLES
+ =============================*/
+.contact__form-container {
   position: sticky;
-  top: clamp(6rem, 10vh, 8rem);
-  height: fit-content;
+  top: var(--space-xl);
+}
+
+.contact__form-wrapper {
+  padding: 0 var(--space-2xl);
+  border-left: 1px solid var(--color-black);
 }
 
 .contact__form-header {
-  text-align: center;
-  margin-bottom: var(--space-lg);
-  background: var(--color-white);
-  padding: var(--space-xl) var(--space-lg) 0;
-  border-radius: clamp(12px, 2vw, 20px) clamp(12px, 2vw, 20px) 0 0;
+  display: flex;
+  gap: var(--space-md);
+  flex-direction: column;
+  margin-bottom: var(--space-2xl);
 }
 
 .contact__form-title {
+  line-height: 1.3;
   font-weight: 600;
-  line-height: 1.2;
   color: var(--color-black);
-  margin-bottom: var(--space-sm);
   font-size: clamp(1.5rem, 3vw, 2rem);
 }
 
@@ -200,35 +214,113 @@
 }
 
 .contact__form {
+  width: 100%;
   overflow: hidden;
-  min-height: 600px;
+  min-height: clamp(800px, 100vh, 1200px);
+  border: 2px solid var(--color-primary);
+}
+
+.contact__form iframe {
+  border-radius: clamp(8px, 1vw, 12px);
+}
+
+/**=======================
+ * CONTACT TRUST SECTION
+ ========================*/
+.contact__trust {
+  width: 100%;
+  position: relative;
   background: var(--color-white);
-  border-radius: 0 0 clamp(12px, 2vw, 20px) clamp(12px, 2vw, 20px);
-  box-shadow: 0 10px 30px rgba(11, 9, 6, 0.1);
+  padding: var(--space-3xl) clamp(3vw, 5vw, 5vw);
+  border-top: 1px solid rgba(11, 9, 6, 0.1);
 }
 
-/**====================
- * FOOTER ADJUSTMENTS
- =====================*/
-.footer__main {
-  grid-template-columns: 2fr 1fr;
+.contact__trust-container {
+  display: grid;
+  margin: 0 auto;
+  max-width: 1200px;
+  align-items: flex-start;
+  gap: clamp(2rem, 5vw, 4rem);
+  grid-template-columns: 1fr 1.5fr;
 }
 
-.footer__contact-info {
+.contact__trust-content {
   display: flex;
-  gap: var(--space-2xl);
-  align-items: flex-end;
+  gap: var(--space-md);
   flex-direction: column;
 }
 
-.footer__contact {
-  display: flex;
-  gap: var(--space-xl);
+.contact__trust-title {
+  line-height: 1.3;
+  font-weight: 600;
+  color: var(--color-black);
+  font-size: clamp(1.5rem, 3vw, 2rem);
 }
 
-.footer__social {
-  display: flex;
+.contact__trust-text {
+  line-height: 1.6;
+  color: var(--color-black-soft);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+}
+
+.contact__trust-features {
+  display: grid;
   gap: var(--space-lg);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.contact__trust-item {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  gap: var(--space-sm);
+  flex-direction: column;
+  padding: var(--space-md);
+  background: var(--color-gray-light);
+  border-radius: clamp(8px, 1vw, 12px);
+}
+
+.contact__trust-icon {
+  display: flex;
+  flex-shrink: 0;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-black);
+  width: clamp(28px, 4vw, 32px);
+  height: clamp(28px, 4vw, 32px);
+  font-size: var(--font-size-xs);
+  background: var(--color-primary);
+  font-weight: var(--font-weight-semibold);
+}
+
+.contact__trust-label {
+  font-weight: 500;
+  color: var(--color-black);
+  font-size: var(--font-size-sm);
+}
+
+/**======================
+ * FOOTER MODIFICATIONS
+ =======================*/
+.footer__contact-direct {
+  display: flex;
+  gap: var(--space-sm);
+  flex-direction: column;
+}
+
+.footer__contact-phone,
+.footer__contact-email {
+  color: var(--color-primary);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  transition: all 0.3s var(--transition-smooth);
+}
+
+.footer__contact-phone:hover,
+.footer__contact-email:hover {
+  color: var(--color-white);
 }
 
 /**====================
@@ -236,68 +328,62 @@
  =====================*/
 @media (max-width: 1024px) {
   .contact__container {
-    gap: var(--space-2xl);
+    grid-template-columns: 1fr;
   }
 
   .contact__content {
     padding-right: 0;
   }
 
-  .contact__form-wrapper {
+  .contact__form-container {
     position: static;
+  }
+
+  .contact__trust-container {
+    text-align: center;
+    grid-template-columns: 1fr;
+  }
+
+  .contact__trust-features {
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 
 @media (max-width: 768px) {
-  .contact__container {
-    gap: var(--space-xl);
-    grid-template-columns: 1fr;
+  .contact__main {
+    padding: clamp(2rem, 5vw, 3rem) clamp(3vw, 5vw, 5vw);
   }
 
-  .contact__content {
-    gap: var(--space-xl);
+  .contact__form-wrapper {
+    padding: clamp(1.5rem, 4vw, 2rem);
   }
 
-  .contact__steps {
+  .contact__form {
+    min-height: clamp(600px, 80vh, 800px);
+  }
+
+  .contact__trust-features {
     gap: var(--space-md);
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .contact__features,
-  .contact__guarantee {
-    padding: var(--space-lg);
-  }
-
-  .footer__main {
-    gap: var(--space-2xl);
-    grid-template-columns: 1fr;
-  }
-
-  .footer__contact-info {
-    gap: var(--space-lg);
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .footer__contact {
-    gap: var(--space-lg);
-    flex-direction: column;
+  .contact__trust-item {
+    padding: var(--space-sm);
   }
 }
 
 @media (max-width: 480px) {
-  .contact__header {
-    padding-top: clamp(5rem, 10vh, 6rem);
+  .contact__step-number {
+    width: clamp(40px, 8vw, 50px);
+    height: clamp(40px, 8vw, 50px);
+    font-size: clamp(1rem, 3vw, 1.2rem);
   }
 
-  .contact__main {
-    padding: var(--space-2xl) clamp(3vw, 5vw, 5vw);
+  .contact__promise {
+    padding: clamp(1rem, 3vw, 1.5rem);
   }
 
-  .contact__step {
-    gap: var(--space-sm);
-  }
-
-  .contact__guarantee-badge {
-    gap: var(--space-sm);
+  .contact__trust-features {
+    grid-template-columns: 1fr;
   }
 }
