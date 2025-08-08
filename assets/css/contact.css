@@ -264,7 +264,6 @@
   line-height: 1.6;
   color: var(--color-black-soft);
   font-size: var(--font-size-base);
-  font-weight: var(--font-weight-normal);
 }
 
 .contact__trust-features {
@@ -304,9 +303,9 @@
   font-size: var(--font-size-sm);
 }
 
-/**======================
- * FOOTER MODIFICATIONS
- =======================*/
+/**===========================
+ * FOOTER MODIFICATION STYLES
+ ============================*/
 .footer__contact-direct {
   display: flex;
   gap: var(--space-sm);
