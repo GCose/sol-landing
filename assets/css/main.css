@@ -910,9 +910,9 @@ body {
   }
 }
 
-/**====================
+/**================
  * PROMISE STYLES
- =====================*/
+ =================*/
 .promise__section {
   width: 100%;
   position: relative;
@@ -1001,10 +1001,7 @@ body {
 
 /*========== Promise Visual ==========*/
 .promise__visual {
-  width: 100vw;
   position: relative;
-  margin-left: calc(-1 * clamp(3vw, 5vw, 5vw));
-  margin-right: calc(-1 * clamp(3vw, 5vw, 5vw));
 }
 
 .promise__visual img {
@@ -1019,7 +1016,6 @@ body {
   margin: 0 auto;
   max-width: 800px;
   text-align: center;
-  margin-top: var(--space-3xl);
   padding: 0 clamp(3vw, 5vw, 5vw);
 }
 
@@ -1046,14 +1042,23 @@ body {
   }
 
   .promise__visual {
-    height: 50vh;
+    left: 50%;
+    right: 50%;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    margin-left: -50vw;
+    margin-right: -50vw;
   }
 
   .promise__visual img {
-    height: 50vh;
+    height: 100vh;
+  }
+
+  .promise__quote {
+    margin-top: var(--space-3xl);
   }
 }
-
 /**====================
  * HIGHLIGHTS STYLES
  =====================*/
