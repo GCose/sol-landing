@@ -650,7 +650,7 @@ body {
 .hero__description {
   line-height: 1.3;
   color: var(--color-black-soft);
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-lg);
   margin-bottom: var(--space-sm);
   font-weight: var(--font-weight-normal);
 }
@@ -664,7 +664,7 @@ body {
 
 .hero__features {
   display: flex;
-  gap: var(--space-sm);
+  gap: var(--space-md);
   flex-direction: column;
 }
 
