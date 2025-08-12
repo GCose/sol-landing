@@ -1495,7 +1495,6 @@ body {
   overflow: hidden;
   position: relative;
   height: clamp(30vh, 70vh, 70vh);
-  border-radius: clamp(8px, 1.5vw, 16px);
 }
 
 .process__step-visual img {
@@ -1892,7 +1891,6 @@ body {
   width: 100%;
   overflow: hidden;
   height: clamp(50vh, 80vh, 80vh);
-  border-radius: clamp(8px, 1.5vw, 16px);
 }
 
 .cta__image img {
