@@ -548,17 +548,128 @@ body {
 
 .hero__part-content {
   display: flex;
-  align-items: center;
-  background: var(--color-white);
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
   padding: 0 clamp(3vw, 5vw, 5vw);
 }
 
 .hero__title--main {
   font-weight: 800;
   line-height: 1.2;
+  text-align: center;
   letter-spacing: -0.03em;
   color: var(--color-black);
-  font-size: clamp(2rem, 4.5vw, 5.5rem);
+  margin-bottom: var(--space-lg);
+  font-size: clamp(2rem, 4vw, 5.5rem);
+}
+
+/*========== Hero CTA Group ==========*/
+.hero__cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-md);
+  justify-content: flex-start;
+  margin-top: var(--space-lg);
+}
+
+/*========== Hero CTA Button Base ==========*/
+.hero__cta-button {
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  display: inline-flex;
+  gap: var(--space-xs);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  justify-content: center;
+  font-size: var(--font-size-base);
+  min-width: clamp(200px, 45%, 280px);
+  border-radius: clamp(6px, 1vw, 10px);
+  font-weight: var(--font-weight-medium);
+  transition: all 0.4s var(--transition-smooth);
+}
+
+/*========== Primary CTA Button ==========*/
+.hero__cta-button--primary {
+  color: var(--color-black);
+  background: var(--color-primary);
+}
+
+.hero__cta-button--primary::before {
+  top: 0;
+  content: "";
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: var(--color-black);
+  transition: left 0.4s var(--transition-smooth);
+}
+
+.hero__cta-button--primary:hover::before {
+  left: 0;
+}
+
+.hero__cta-button--primary .hero__cta-text,
+.hero__cta-button--primary .hero__cta-arrow {
+  z-index: 1;
+  position: relative;
+  transition: color 0.4s var(--transition-smooth);
+}
+
+.hero__cta-button--primary:hover .hero__cta-text,
+.hero__cta-button--primary:hover .hero__cta-arrow {
+  color: var(--color-primary);
+}
+
+/*========== Secondary CTA Button ==========*/
+.hero__cta-button--secondary {
+  color: var(--color-black);
+  background: transparent;
+  border: 2px solid var(--color-black);
+}
+
+.hero__cta-button--secondary::before {
+  top: 0;
+  content: "";
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: var(--color-black);
+  transition: left 0.4s var(--transition-smooth);
+}
+
+.hero__cta-button--secondary:hover::before {
+  left: 0;
+}
+
+.hero__cta-button--secondary .hero__cta-text,
+.hero__cta-button--secondary .hero__cta-arrow {
+  z-index: 1;
+  position: relative;
+  transition: color 0.4s var(--transition-smooth);
+}
+
+.hero__cta-button--secondary:hover .hero__cta-text,
+.hero__cta-button--secondary:hover .hero__cta-arrow {
+  color: var(--color-white);
+}
+
+/*========== CTA Arrow Animation ==========*/
+.hero__cta-button .hero__cta-arrow {
+  transform: translateX(0);
+  font-size: clamp(1rem, 2vw, 1.6rem);
+  transition: transform 0.4s var(--transition-smooth);
+}
+
+.hero__cta-button:hover .hero__cta-arrow {
+  transform: translateX(clamp(3px, 1vw, 8px));
 }
 
 .hero__part-image {
@@ -587,7 +698,7 @@ body {
 .hero__story-header {
   width: 100%;
   text-align: center;
-  margin-bottom: var(--space-2xl);
+  margin-bottom: var(--space-3xl);
   padding: 0 clamp(3vw, 5vw, 5vw);
 }
 
@@ -604,6 +715,14 @@ body {
   font-weight: 800;
   max-width: 1300px;
   font-size: clamp(1.8rem, 4vw, 4rem);
+  margin-bottom: clamp(0.8rem, 2vw, 1.2rem);
+}
+
+.hero__subtitle--line2 {
+  display: block;
+  font-weight: 600;
+  color: var(--color-primary);
+  font-size: clamp(1.6rem, 4.5vw, 3.5rem);
 }
 
 /*========== Hero Story Main ==========*/
@@ -648,9 +767,9 @@ body {
 }
 
 .hero__description {
-  line-height: 1.6;
+  line-height: 1.3;
   color: var(--color-black-soft);
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-xl);
   margin-bottom: var(--space-sm);
   font-weight: var(--font-weight-normal);
 }
@@ -664,7 +783,7 @@ body {
 
 .hero__features {
   display: flex;
-  gap: var(--space-md);
+  gap: var(--space-sm);
   flex-direction: column;
 }
 
@@ -694,12 +813,12 @@ body {
   font-weight: var(--font-weight-normal);
 }
 
-/*========== Hero CTA Styles ==========*/
+/*========== Hero CTA Styles (Part 2) ==========*/
 .hero__cta-section {
   margin-top: var(--space-md);
 }
 
-.hero__cta-button {
+.hero__cta-section .hero__cta-button {
   width: 100%;
   border: none;
   cursor: pointer;
@@ -720,7 +839,7 @@ body {
   transition: all 0.4s var(--transition-smooth);
 }
 
-.hero__cta-button::before {
+.hero__cta-section .hero__cta-button::before {
   top: 0;
   content: "";
   left: -100%;
@@ -731,29 +850,29 @@ body {
   transition: left 0.4s var(--transition-smooth);
 }
 
-.hero__cta-button:hover::before {
+.hero__cta-section .hero__cta-button:hover::before {
   left: 0;
 }
 
-.hero__cta-text,
-.hero__cta-arrow {
+.hero__cta-section .hero__cta-text,
+.hero__cta-section .hero__cta-arrow {
   z-index: 1;
   position: relative;
   transition: color 0.4s var(--transition-smooth);
 }
 
-.hero__cta-button:hover .hero__cta-text,
-.hero__cta-button:hover .hero__cta-arrow {
+.hero__cta-section .hero__cta-button:hover .hero__cta-text,
+.hero__cta-section .hero__cta-button:hover .hero__cta-arrow {
   color: var(--color-primary);
 }
 
-.hero__cta-arrow {
+.hero__cta-section .hero__cta-arrow {
   transform: translateX(0);
   font-size: clamp(1rem, 2vw, 1.6rem);
   transition: transform 0.4s var(--transition-smooth);
 }
 
-.hero__cta-button:hover .hero__cta-arrow {
+.hero__cta-section .hero__cta-button:hover .hero__cta-arrow {
   transform: translateX(clamp(3px, 1vw, 8px));
 }
 
@@ -764,6 +883,17 @@ body {
   .hero__part--split {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+  }
+
+  .hero__cta-group {
+    width: 100%;
+    flex-wrap: nowrap;
+    gap: var(--space-sm);
+  }
+
+  .hero__cta-button {
+    width: 100%;
+    min-width: auto;
   }
 
   .hero__story-main {
@@ -777,6 +907,16 @@ body {
 
   .hero__story-content {
     padding: 0 clamp(3vw, 5vw, 5vw);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__part--split {
+    gap: var(--space-2xl);
+  }
+
+  .hero__cta-group {
+    flex-wrap: wrap;
   }
 }
 
