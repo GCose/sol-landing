@@ -334,10 +334,12 @@
   }
 
   .contact__content {
+    order: 1;
     padding-right: 0;
   }
 
   .contact__form-container {
+    order: -1;
     position: static;
   }
 
