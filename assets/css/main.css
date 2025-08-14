@@ -1443,7 +1443,7 @@ body {
   display: block;
   object-fit: cover;
   object-position: center;
-  height: clamp(40vh, 80vh, 85vh);
+  height: clamp(40vh, 80vh, 95vh);
 }
 
 .why__container {
