@@ -1038,6 +1038,7 @@ body {
 }
 
 .intro__cta-button {
+  width: 97%;
   border: none;
   cursor: pointer;
   overflow: hidden;
@@ -1235,6 +1236,7 @@ body {
 }
 
 .promise__cta-button {
+  width: 97%;
   border: none;
   cursor: pointer;
   overflow: hidden;
