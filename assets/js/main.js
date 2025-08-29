@@ -6,11 +6,9 @@ window.addEventListener(
   () => {
     const nav = document.querySelector(".nav__container");
     if (window.scrollY > 100) {
-      nav.style.background = "rgba(11, 9, 6, 0.95)";
-      nav.style.mixBlendMode = "normal";
+      nav.classList.add("scrolled");
     } else {
-      nav.style.background = "transparent";
-      nav.style.mixBlendMode = "difference";
+      nav.classList.remove("scrolled");
     }
   },
   { passive: true }
@@ -68,9 +66,9 @@ document.getElementById("hero-cta")?.addEventListener("click", () => {
   }
 });
 
-/**===============================
- * SCROLLREVEAL LUXURIOUS ANIMATIONS
- ================================*/
+/**=========================
+ * SCROLLREVEAL ANIMATIONS
+ ==========================*/
 const sr = ScrollReveal({
   distance: "60px",
   duration: 1000,
