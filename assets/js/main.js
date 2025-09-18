@@ -245,9 +245,9 @@ sr.reveal(".process__step--right .process__step-visual", {
   delay: isMobile ? 200 : 800,
 });
 
-/**===============
+/**======================
  * TESTIMONIALS SECTION
- ================*/
+ =======================*/
 sr.reveal(".testimonials__card", {
   origin: "bottom",
   interval: 300,
