@@ -1413,6 +1413,12 @@ body {
   flex-direction: column;
 }
 
+#spazioMarkis,
+#energyPergola,
+#capriDarkParasol {
+  scroll-margin-top: 7rem;
+}
+
 /*========== Individual Product ==========*/
 .highlights__product {
   display: grid;
